@@ -41,31 +41,48 @@ body {
     
   }
 
-    .navbar {
-      background-color: white; /* Navbar background */
-      padding: 20px;
-      display: flex;
-      gap: 20px;
-      margin-top: -188%;
-      height: 30px;
-    }
+.navbar {
+  background-color: white; /* Navbar background */
+  padding: 15px 20px;
+  display: flex;
+  justify-content: flex-start; /* items in row */
+  align-items: center;
+  gap: 20px;
+  height: 50px;
+  position: fixed;   /* ✅ stays on top */
+  top: 0;
+  left: 0;
+  right: 0;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* little shadow */
+  z-index: 1000; /* stays above other sections */
+}
 
-    .navbar a {
-      text-decoration: none;
-      color: black;
-      font-weight: bold;
-      margin-left:7%;
-      
-    }
+.navbar a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  margin-left: 7%;
+}
 
-    .navbar a:hover {
-      color: rgb(135, 211, 247);
-    }
+.navbar a:hover {
+  color: rgb(135, 211, 247);
+}
 
-    .navbar button:hover {
-      color: rgb(135, 211, 247); 
-      background-color: antiquewhite;
-    }  
+.navbar button {
+  margin-left: auto; /* ✅ pushes button to right side */
+  padding: 8px 15px;
+  border: none;
+  border-radius: 5px;
+  background-color: rgb(135, 211, 247);
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.navbar button:hover {
+  color: rgb(135, 211, 247);
+  background-color: antiquewhite;
+}
+  
 
     .word {
       margin-left: 3%;
@@ -181,5 +198,6 @@ body {
 </html>
 
    
+
 
 
