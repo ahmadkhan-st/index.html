@@ -100,9 +100,27 @@
       background-color: rgb(20, 180, 100);
     }
 
+     .hero-image {
+      position: relative;
+      flex: 1;
+      display: flex;
+      justify-content: flex-end;
+    }
     .pic {
-      margin-bottom:-10%; 
-      margin-left: 550px;
+      width: 350px;
+      border-radius: 15px;
+    }
+
+    /* ✅ Box over image */
+    .pic {
+      position: absolute;
+      top: 20%;
+      right: 10%;
+      background-color: rgba(248, 246, 246, 0.9);
+      padding: 15px;
+      border-radius: 15px;
+      width: 220px;
+    }
     }
   </style>
 </head>
@@ -140,6 +158,7 @@
 </html>
 
    
+
 
 
 
